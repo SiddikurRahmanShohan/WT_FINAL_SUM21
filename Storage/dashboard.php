@@ -11,6 +11,6 @@ if(!isset($_COOKIE["loggedUser"])){
 	<head></head>
 	<body>
 	    <h3>Dashboard</h3>
-		<h2>Welcome, <?php echo $_COOKIE["loggedUser"]</p>
+		<h2>Welcome, <?php echo $_COOKIE["loggedUser"] ?></p>
 	</boady>
 </html>

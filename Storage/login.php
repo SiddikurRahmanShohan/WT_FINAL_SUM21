@@ -3,7 +3,7 @@ $uname="";
 $err_uname="";
 $pass="";
 $err_pass="";
-$hasError="";
+$hasError= false;
 
 $users = array("u1"=>"123","u2"=>"123");
 
@@ -24,9 +24,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$pass = $_POST["pass"];
 	}
 	
-	if(!hasError){
-		foreach($users as $u=>$$p){
-			if($uname == $ u && $pass == $p){
+	if(!$hasError){
+		foreach($users as $u=>$p){
+			if($uname == $u && $pass == $p){
 				setcookie("loggedUser", $uname, time()+60);
 				header("Location: dashboard.php");
 			}
