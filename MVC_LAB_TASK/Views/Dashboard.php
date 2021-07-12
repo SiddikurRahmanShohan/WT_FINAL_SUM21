@@ -1,6 +1,6 @@
 <?php include 'MainHeader.php'; ?>
-<?php include '../Controllers/UserControll.php'; ?>
- <html>
+<?php include 'AdminHeader.php'; ?>
+<html>
     <head></head>
 	<boady>
 	    <div align="center">
@@ -9,7 +9,7 @@
 			<form action="" method="post">
 			    <div>
 				    <h4>Username</h4>
-					<input type = "text" name = "uname" value="<?php echo $uname; ?>"/>
+					<input type = "text" name = "uname"/>
 					<span> <?php echo $err_uname; ?> </span>
 				</div>
 				<div>
