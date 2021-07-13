@@ -26,6 +26,9 @@
 		    $err_cname = "Category Name Requird";
 			$hasError = true;
 	    }
+		else{
+			$cname= $_POST["cname"];
+		}
 		if(!$hasError){
 			$rs = updateCategory($cname, $_POST["id"]);
 			if($rs === true){
@@ -56,8 +59,8 @@
 		}
 		return false;
 	}
-	function updateCategory($name,$id){
-		$query = "update categories set name='$name' where id=$id";
+	function updateCategory($cname,$id){
+		$query = "update categories set cname='$cname' where id=$id";
 		$rs = execute($query);
 		return $rs;
 	}
