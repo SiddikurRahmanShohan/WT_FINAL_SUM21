@@ -10,6 +10,9 @@
 		    $err_cname = "Category Name Requird";
 			$hasError = true;
 	    }
+		else{
+			$cname= $_POST["cname"];
+		}
 		if(!$hasError){
 			$rs = insertCategory($cname);
 			if($rs === true){
@@ -29,7 +32,6 @@
 				header("Location: AllCategories.php");
 			}
 			$err_db = $rs;
-		}
 		}
 	}
 	

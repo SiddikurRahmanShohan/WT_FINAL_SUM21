@@ -21,7 +21,7 @@
 							echo "<tr>";
 							    echo "<td>$i</td>";
 								echo "<td>".$c["cname"]."</td>";
-								echo '<td><a href = "EditCategory.php?id='.$c["id"]'">Edit</td>';
+								echo '<td><a href = "EditCategory.php?id='.$c["id"].'">Edit</td>';
 							echo "</tr>";
 							$i++;
 						}
